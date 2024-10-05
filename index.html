@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="icon" href="img/ribka.jpg">
+        <title>Cek Oshi Kalian</title>
+
+    </head>
+
+    <body>
+        <main>
+            <div class="card">
+                <h1>Cek Oshi</h1>
+                <p>Masukkan nama untuk melihat oshi kamu</p>
+                <input type="text" id="nameInput" placeholder="Ketik nama kamu di sini" />
+                <button onclick="cekKhodam()">Cek Oshi</button>
+                <div id="loading" class="loading-spinner" style="display: none"></div>
+                <div id="result">
+                    <h2 id="khodamName"></h2>
+                    <p id="khodamMeaning"></p>
+
+                    <div class="image-container">
+                        <img id="khodamImage" class="khodamImage" alt="Khodam Image" style="display: none" />
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="footer" id="year">
+            Copyright © 
+            <a class="receh-link" target="_blank" href="https://x.com/bayu_pradityaa">uyabb</a>
+        </div>
+        <script src="script.js"></script>
+    </body>    
+</html>
